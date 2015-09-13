@@ -26,4 +26,4 @@ ADD logging /etc/radicale/logging
 
 EXPOSE 5232
 
-CMD [ "/usr/bin/radicale" "-f" ]
+CMD [ "/usr/bin/radicale", "-f" ]
