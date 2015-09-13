@@ -1,0 +1,14 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:gs="http://namespaces.zope.org/genericsetup">
+  <gs:upgradeSteps
+    source="1000"
+    destination="1001"
+    profile="collective.flattr:migration_1000_1001">
+    <gs:upgradeStep
+      title="Remove unused Registry keys"
+      description="Remove collective.flattr.interfaces.ICollectiveFlattr.disable_ssl_certificate_validation"
+      handler=".migrations.migrate_1000_1001"
+      />
+  </gs:upgradeSteps>
+</configure>

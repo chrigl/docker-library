@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<registry>
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.access_token" delete="true" />
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.access_token_type" delete="true" />
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.access_token_url" delete="true" />
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.authorize_url" delete="true" />
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.base_type" delete="true" />
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.base_url" delete="true" />
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.customer_key" delete="true" />
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.customer_secret" delete="true" />
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.disable_ssl_certificate_validation" delete="true" />
+</registry>

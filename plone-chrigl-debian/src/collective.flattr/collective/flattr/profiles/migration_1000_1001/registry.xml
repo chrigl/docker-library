@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<registry>
+  <record name="collective.flattr.interfaces.ICollectiveFlattr.disable_ssl_certificate_validation" delete="true" />
+</registry>

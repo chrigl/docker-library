@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR&xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="collective.flattr">
+  <head><title>collective.flattr popup</title></head>
+
+  <body tal:define="things view/getThings;">
+    <div id="flattr_popup">
+
+      <form name="flattr_popup_form" method="post"
+        id="flattr_popup_form"
+        tal:attributes="action here/absolute_url">
+        <input type="hidden" name="fieldName" tal:attributes="value request/fieldName" />
+      <ul id="flattr_things">
+      <tal:block tal:repeat="item things/data">
+        <li>
+          <input type="checkbox" name="thingid"
+            tal:attributes="value item/id" />
+          <span tal:content="item/title" />
+        </li>
+      </tal:block>
+      </ul>
+      </form>
+
+      <div id="flattr_thing_links"
+        tal:define="prev view/getPrevUrl;
+          next view/getNextUrl">
+        <a class="flattr_popup_link" tal:condition="prev"
+          tal:attributes="href prev"
+          i18n:translate="">previous</a>
+
+        <span tal:condition="python:prev and things.get('next_page', False)"> - </span>
+
+        <a class="flattr_popup_link" tal:condition="things/next_page|nothing"
+          tal:attributes="href next"
+          i18n:translate="">next</a>
+      </div>
+
+    </div>
+  </body>
+
+</html>

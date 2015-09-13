@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+ <object
+  name="flattrthing"
+  meta_type="Filesystem Directory View"
+  directory="collective.flattr:skins/flattrthing" />
+ <skin-path name="*">
+  <layer name="flattrthing"
+    insert-after="custom" />
+ </skin-path>
+</object>

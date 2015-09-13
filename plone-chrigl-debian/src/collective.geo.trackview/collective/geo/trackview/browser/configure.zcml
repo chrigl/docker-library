@@ -1,0 +1,29 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:zope="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five">
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+      for="*"
+      name="route_view"
+      class=".routeview.RouteView"
+      template="trackview.pt"
+      allowed_interface=".routeview.IRouteView"
+      permission="zope.Public"
+      />
+
+
+  <browser:page
+      for="collective.geo.trackview.interfaces.IGisFile"
+      name="track_view"
+      class=".trackview.TrackView"
+      template="trackview.pt"
+      allowed_interface=".trackview.ITrackView"
+      permission="zope.Public"
+      />
+
+
+</configure>

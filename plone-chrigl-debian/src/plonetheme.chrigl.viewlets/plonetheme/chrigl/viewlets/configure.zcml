@@ -1,0 +1,32 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  xmlns:browser="http://namespaces.zope.org/browser">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include package="z3c.jbot" file="meta.zcml" />
+  <include package="plonetheme.chrigl" />
+
+  <browser:jbot
+    directory="override-templates"
+    layer="plonetheme.chrigl.browser.interfaces.IThemeSpecific" />
+
+  <browser:viewlet
+    name="plonetheme.chrigl.viewlets.comments"
+    for="*"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+    template="comments.pt"
+    class=".comments.CommentsViewlet"
+    permission="zope2.View"
+    />
+
+  <browser:viewlet
+    name="plonetheme.chrigl.viewlets.portlettoggle"
+    for="*"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+    template="portlettoggle.pt"
+    permission="zope2.View"
+    />
+
+</configure>

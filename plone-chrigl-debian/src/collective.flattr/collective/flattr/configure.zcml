@@ -1,0 +1,64 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.flattr">
+
+  <five:registerPackage package="." />
+  <cmf:registerDirectory name="flattrthing" />
+
+  <i18n:registerTranslations directory="locales" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.flattr"
+      directory="profiles/default"
+      description="Installs the collective.flattr package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="migration_1000_1001"
+      title="Migration profile for 1000 to 1001"
+      description="Remove unused Registry keys"
+      directory="profiles/migration_1000_1001"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Uninstall collective.flattr"
+      directory="profiles/uninstall"
+      description="Uninstalls the collective.flattr package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+
+
+  <include package=".portlets" />
+  <include package=".browser" />
+  <include package=".migrations" />
+  
+
+  <include package="archetypes.schemaextender" />
+  <adapter factory=".extender.FlattrExtender" />
+
+  <utility
+    provides="zope.schema.interfaces.IVocabularyFactory"
+    component=".vocab.flattrCategoryVocab"
+    name="collective.flattr.categories" />
+  <utility
+    provides="zope.schema.interfaces.IVocabularyFactory"
+    component=".vocab.flattrLanguageVocab"
+    name="collective.flattr.languages" />
+
+  <subscriber
+    for="Products.Archetypes.interfaces.IObjectInitializedEvent"
+    handler=".handlers.create_flattr_thing" />
+  <subscriber
+    for="Products.Archetypes.interfaces.IObjectEditedEvent"
+    handler=".handlers.update_flattr_thing" />
+  
+</configure>

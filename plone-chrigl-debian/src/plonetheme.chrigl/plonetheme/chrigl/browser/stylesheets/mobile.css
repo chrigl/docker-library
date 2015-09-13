@@ -1,0 +1,166 @@
+/* Stylesheet for the 'Chrigls Plone 4 Theme' Plone theme */
+
+@media screen and (min-width: 950px) {
+	#portal-columns {
+	    width: 910px;
+	}
+
+	#visual-portal-wrapper {
+	    width: 930px;
+	}
+
+#portal-globalnav li {
+    text-align: right;
+    display: inline;
+    visibility: visible;
+}
+#portal-globalnav #portaltab-index_html a {
+    border-left: 0.1em solid white;
+}
+
+}
+
+@media screen and (max-width: 950px) {
+#portal-columns {
+    width: 97%;
+}
+
+#visual-portal-wrapper {
+    width: 90%;
+}
+}
+
+@media screen and (max-width: 900px) {
+
+#portal-globalnav li a {
+    display: block;
+    border-right: none;
+}
+
+#portal-globalnav li.selected {
+    display: inline;
+}
+
+#portal-globalnav li {
+    display: none;
+}
+
+#portal-globalnav li {
+    text-align: left;
+}
+}
+
+@media screen and (min-width: 701px) {
+#portlettoggle {
+    display: none;
+    visibility: hidden;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+#portal-column-two {
+    display: none;
+    position: absolute;
+    width: 75%;
+    margin-left: -95%;
+    background-color: white;
+    margin-top: 26px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#portlettoggle {
+    float: right;
+    display: block;
+    visibility: visible;
+    margin-top: -5px;
+}
+
+#portlettoggle a img.rotated {
+    transform: rotate(90deg);
+}
+
+#portal-breadcrumbs {
+    float: left;
+}
+
+#portal-column-content {
+    width: 97%;
+}
+}
+
+@media screen and (max-width: 557px) {
+div.overlay,
+#portal-searchbox,
+#portal-personaltools,
+#edit-bar
+{
+    font-size: 60%;
+}
+
+.formTabs
+{
+    font-size: 80%;
+}
+
+#text_toolbar1 {
+}
+
+#content-views a, #content li.formTab a, #content-core li.formTab a
+{
+    line-height: 2em;
+}
+
+#portal-searchbox {
+    margin-left: 10px;
+}
+
+#searchGadget {
+    font-size: 110%;
+}
+
+.field {
+    width: 100%;
+}
+
+.field input[type="text"][size]
+{
+    width: 100%;
+}
+
+#cmfeditions_version_comment_block
+{
+    width: 92%;
+}
+
+#fieldset-default {
+    padding-left: 0px;
+}
+
+#portal-column-content {
+    width: 95%;
+}
+
+.image-inline,
+.image-left,
+.image-right {
+    width: 100%;
+}
+
+.existingTags {
+    width: 100% !important;
+}
+
+#content .selectedTagsSection {
+    width: 100% !important;
+}
+
+.newTagsSection {
+    width: 80% !important;
+}
+#search-field input.searchPage[type=text] {
+    width: 100%;
+}
+}

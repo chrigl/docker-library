@@ -1,0 +1,50 @@
+<configure xmlns="http://namespaces.zope.org/browser"
+  xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <resource
+    name="collective.flattr.js"
+    file="flattr.js" />
+
+  <viewlet
+    name="collective.flattr"
+    for="*"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+    class=".viewlets.FlattrViewlet"
+    permission="zope.Public" />
+
+  <page
+    name="collective_flattr"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".flattr.Flattr"
+    permission="cmf.ManagePortal"
+    allowed_interface=".flattr.IFlattr"
+    />
+
+  <page
+    name="flattr-controlpanel"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".controlpanel.ControlPanel"
+    permission="cmf.ManagePortal"
+    />
+
+  <page
+    name="flattr_popup"
+    for="*"
+    class=".flattr.FlattrPopup"
+    template="flattr_popup.pt"
+    permission="cmf.ModifyPortalContent"
+    />
+
+  <page
+    name="flattr_helper"
+    for="*"
+    class=".flattrhelper.FlattrHelper"
+    permission="zope2.View"
+    allowed_interface=".flattrhelper.IFlattrHelper"
+    />
+
+  <resource
+    name="collective.flattr.png"
+    image="flattr.png" />
+
+</configure>

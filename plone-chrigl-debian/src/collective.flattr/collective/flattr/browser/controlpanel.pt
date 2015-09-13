@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    metal:use-macro="context/prefs_main_template/macros/master"
+    i18n:domain="collective.flattr">
+
+<body>
+<div metal:fill-slot="prefs_configlet_content">
+
+  <div id="region-content" class="documentEditable">
+    <div class="documentContent" id="content">
+      <a name="documentContent"></a>
+        <h1 class="documentFirstHeading"
+          i18n:translate="heading_settings">collective.flattr Settings</h1>
+
+        <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+          Portal status message
+        </div>
+
+        <div class="configlet">
+          <h2 i18n:translate="">Step 1 - Configure consumer key and secret</h2>
+          <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
+        </div>
+
+        <div class="configlet" id="test-access-token" tal:condition="view/showObtainAccessToken">
+          <form name="settings" method="post"
+            class="enableFormTabbing enableUnloadProtection"
+            tal:attributes="action request/URL">
+            <h2 i18n:translate="">Step 2 - Acquire an access token</h2>
+
+            <div class="formControls" tal:condition="not: view/flattr/access_token">
+              <input type="submit"
+                name="form.button.AcquireToken"
+                class="context"
+                value="Acquire access token"
+                i18n:attributes="value" />
+
+              <input type="submit"
+                name="form.button.Cancel"
+                class="context"
+                value="Cancel"
+                i18n:attributes="value" />
+            </div>
+            <div i18n:translate="" id="flattr_info" tal:condition="view/flattr/access_token">
+              Access token already configured.
+            </div>
+
+            <tal:block tal:condition="view/flattr/access_token" >
+              <h2 i18n:translate="">Step 3 - Test access token</h2>
+
+              <div id="flattr_test_result"
+                tal:condition="view/test_access_token">
+                <pre tal:content="view/test_access_token" />
+              </div>
+
+              <div class="formControls">
+                <input type="submit"
+                  name="form.button.TestAccessToken"
+                  class="context"
+                  value="Test access token"
+                  i18n:attributes="value" />
+
+                <input type="submit"
+                  name="form.button.ClearAccessToken"
+                  class="context"
+                  value="Clear access token"
+                  i18n:attributes="value" />
+              </div>
+            </tal:block>
+
+          </form>
+        </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

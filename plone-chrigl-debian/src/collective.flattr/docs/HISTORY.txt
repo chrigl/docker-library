@@ -1,0 +1,12 @@
+Changelog
+=========
+
+0.2 (unreleased)
+----------------
+
+- Make collective.flattr work in https environments (#1)
+
+0.1 (2011-12-30)
+----------------
+
+- Initial release

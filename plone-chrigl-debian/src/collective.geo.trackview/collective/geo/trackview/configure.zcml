@@ -1,0 +1,29 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:cmf="http://namespaces.zope.org/cmf"
+  i18n_domain="collective.geo.trackview">
+
+  <include package=".browser" />
+  <include file="profiles.zcml" />
+  <include file="maplayers.zcml" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <include package=".browser" />
+  
+  <adapter
+    factory=".typerecognition.GpxRecognition"
+    name="gpx_recognition" />
+
+
+  <subscriber
+    for="Products.ATContentTypes.interfaces.IATFile
+    Products.Archetypes.interfaces.IObjectInitializedEvent"
+    handler=".eventhandlers.mark_file" />
+  <subscriber
+    for="Products.ATContentTypes.interfaces.IATFile
+    Products.Archetypes.interfaces.IObjectEditedEvent"
+    handler=".eventhandlers.mark_file" />
+
+</configure>

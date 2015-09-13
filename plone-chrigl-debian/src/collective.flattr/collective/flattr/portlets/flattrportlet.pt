@@ -1,0 +1,43 @@
+<dl class="portlet portletFlattrPortlet"
+    i18n:domain="collective.flattr">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span i18n:translate="">
+           Donate
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+      <div class="flatt_text" tal:content="structure view/transformed">
+        <!-- Text -->
+      </div>
+      <a tal:omit-tag="not: view/button_type"
+         class="FlattrButton"
+         style="display:none;"
+         href="#"
+         tal:attributes="href view/base_url; rev view/button_type"></a>
+
+      <tal:block tal:content=" ">
+      need to use the following code twice, because we need noscript for large
+      and compact button and are not allowed to use noscript on static.
+      </tal:block>
+      <noscript tal:condition="view/button_type">
+        <a href="#" target="_blank" tal:attributes="href view/thing_url"><img
+              tal:attributes="src string:${view/flattr_url}/button/flattr-badge-large.png"
+              alt="Flattr this"
+              title="Flattr this"
+              border="0" /></a>
+      </noscript>
+
+      <tal:static-button tal:condition="not: view/button_type">
+        <a href="#" target="_blank" tal:attributes="href view/thing_url"><img
+              tal:attributes="src string:${view/flattr_url}/button/flattr-badge-large.png"
+              alt="Flattr this"
+              title="Flattr this"
+              border="0" /></a>
+      </tal:static-button>
+    </dd>
+
+</dl>

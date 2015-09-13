@@ -1,0 +1,250 @@
+/* Stylesheet for the 'Chrigls Plone 4 Theme' Plone theme */
+
+body {
+    background-color: #F5F5F5;
+}
+
+#portal-top {
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 1em;
+    background-image: url("++resource++plonetheme.chrigl.images/header.jpg");
+    background-repeat: no-repeat;
+}
+
+#portal-searchbox label {
+    color: black;
+}
+
+#portal-columns + div.row {
+    padding-bottom: 18px;
+    margin-bottom: -18px;
+}
+
+div.width-full {
+    margin-left: -100%;
+    width: 100%;
+}
+
+#portal-logo {
+    margin-left: 10px;
+}
+
+#portal-searchbox,
+#portal-personaltools-wrapper {
+    margin-right: 10px;
+}
+
+#portal-globalnav {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+#portal-globalnav,
+#portal-globalnav li a {
+    background-color: rgba(234, 222, 170, 0.9);
+}
+
+#portal-globalnav .selected a, #portal-globalnav a:hover {
+    background-color: #8B542B;
+}
+
+#portal-globalnav .selected a:hover,
+#portal-personaltools dd a:hover {
+    background-color: #8B542B;
+    color: white;
+}
+
+#portal-columns {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#visual-portal-wrapper {
+    position: absolute;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    top: 18px;
+}
+
+div.position-0 {
+    margin-left: -100%;
+}
+
+div.position-3\:4 {
+    margin-left: -23%;
+}
+
+a:link, a:visited,
+#content a:link, dl.portlet a:link {
+    color: #8B542B;
+}
+
+#content a:hover, dl.portlet a:hover {
+    color: #8B542B !important;
+}
+
+#edit-bar,
+#contentActionMenus ,
+#content-views
+{
+    background-color: #E3E3E3;
+}
+
+#edit-bar {
+    border-color: #E3E3E3;
+}
+
+#edit-bar a {
+    color: black;
+}
+
+#portal-globalnav,
+#portal-personaltools-wrapper .actionMenu,
+dd.actionMenuContent,
+div#edit-bar,
+div.managePortletsLink,
+.portalMessage,
+ul.formTabs,
+ul.formTabs li.formTab a.selected,
+#content-core pre,
+#content-core .kssattr-atfieldname-text img,
+#category a.link-category,
+#portal-footer,
+dl.portlet,
+#visual-portal-wrapper,
+#edit-bar .selected a,
+.image-left,
+.image-right,
+.image-inline,
+#LSResult,
+#portal-searchbox .LSBox {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
+#edit-bar,
+#content ul.formTabs,
+#content-core ul.formTabs
+{
+	border-style: none;
+}
+
+#LSResult {
+    padding: 5px;
+    border-radius: 5px;
+    display:none;
+}
+
+#contentActionMenus dl.actionMenu.activated dd {
+    background-color: #E3E3E3;
+}
+
+#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+    background-color: #E3E3E3;
+    color: black;
+}
+
+#contentActionMenus dl.actionMenu.activated dd {
+    border-bottom: 0.5em solid #E3E3E3;
+}
+
+#portal-footer {
+    background-color: rgba(234, 222, 170, 0.9);
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+#portal-footer p {
+    text-align: center;
+}
+
+#portal-personaltools,
+#portal-personaltools dd {
+    background-color: #F5F5F5;
+}
+
+dl.portlet dt, div.portletAssignments div.portletHeader {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    background-color: #F5F5F5;
+}
+
+dl.portalMessage {
+    background-color: rgba(234, 222, 170, 0.9);
+}
+
+#content-core .description {
+    color: #B1B1B1;
+    padding-bottom: 10px;
+}
+
+#content-core .item {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#portal-header dl.actionMenu.activated dd {
+    border-top-left-radius: 0.5em;
+}
+
+dl.portlet {
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5em;
+}
+
+#viewlet-below-content-title {
+    margin-bottom: 15px;
+}
+
+#content .item .documentActions ul,
+#viewlet-below-content-body .documentActions ul {
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+#content-core .item {
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.flattr_viewlet {
+    float: right;
+}
+
+#document-action-rss a
+{
+    background-image: url("++resource++plonetheme.chrigl.images/rss_icon.png");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.item .documentByLine {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#portal-searchbox .LSBox {
+    padding: 5px;
+    background-color: rgba(245, 245, 245, 0.7);
+    border-radius: 5px;
+}
+
+#portal-searchbox .LSBox:hover {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.link-category {
+    margin-left: 3px;
+}
+
+#searchGadget {
+    width: 70%;
+}

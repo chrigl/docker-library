@@ -1,0 +1,295 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-12-25 17:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.flattr\n"
+
+#: ./../interfaces.py:29
+msgid "Access token"
+msgstr ""
+
+#: ./../interfaces.py:39
+msgid "Access token URL"
+msgstr ""
+
+#: ./../browser/controlpanel.pt:45
+msgid "Access token already configured."
+msgstr ""
+
+#: ./../interfaces.py:34
+msgid "Access token type"
+msgstr ""
+
+#: ./../browser/controlpanel.pt:33
+msgid "Acquire access token"
+msgstr ""
+
+#: ./../widget.py:14
+msgid "Allows to create or select a flattr thing"
+msgstr ""
+
+#: ./../interfaces.py:20
+msgid "Also called application key. You must register your web app at flattr to get the key"
+msgstr ""
+
+#: ./../interfaces.py:25
+msgid "Also called application secret. You must register your web app at flattr to get the key"
+msgstr ""
+
+#: ./../interfaces.py:44
+msgid "Authorize URL"
+msgstr ""
+
+#: ./../interfaces.py:9
+msgid "Base Url"
+msgstr ""
+
+#: ./../browser/controlpanel.pt:39
+msgid "Cancel"
+msgstr ""
+
+#: ./../extender.py:54
+msgid "Category"
+msgstr ""
+
+#: ./../extender.py:55
+msgid "Category of your content"
+msgstr ""
+
+#: ./../browser/controlpanel.py:18
+msgid "Change settings of collective.flattr"
+msgstr ""
+
+#: ./../browser/controlpanel.py:67
+msgid "Changes saved."
+msgstr ""
+
+#: ./../browser/controlpanel.pt:64
+msgid "Clear access token"
+msgstr ""
+
+#: ./../browser/controlpanel.py:121
+msgid "Cleared access token"
+msgstr ""
+
+#: ./../vocab.py:8
+msgid "Compact Counter"
+msgstr ""
+
+#: ./../browser/controlpanel.py:113
+msgid "Configured access token does not work :("
+msgstr ""
+
+#: ./../extender.py:39
+msgid "Create a thing on flattr automatically after create and update."
+msgstr ""
+
+#: ./../extender.py:38
+msgid "Create thing"
+msgstr ""
+
+#: ./../handlers.py:42
+msgid "Created Flattr thing"
+msgstr ""
+
+#: ./../interfaces.py:19
+msgid "Customer key"
+msgstr ""
+
+#: ./../interfaces.py:24
+msgid "Customer secret"
+msgstr ""
+
+#: ./../portlets/flattrportlet.pt:6
+msgid "Donate"
+msgstr ""
+
+#: ./../browser/controlpanel.py:72
+msgid "Edit cancelled."
+msgstr ""
+
+#: ./../extender.py:28
+msgid "Flattr"
+msgstr ""
+
+#: ./../widget.py:13
+msgid "Flattr Thing"
+msgstr ""
+
+#: ./../skins/flattrthing/flattrthing.pt:48
+msgid "Get Things"
+msgstr ""
+
+#: ./../extender.py:46
+msgid "Hide thing"
+msgstr ""
+
+#: ./../extender.py:30
+msgid "Id of your thing"
+msgstr ""
+
+#: ./../extender.py:31
+msgid "Id of your thing, e.g. 408580 for http://flattr.com/thing/408580/Chris-wirre-Gedankenwelt"
+msgstr ""
+
+#: ./../extender.py:62
+msgid "Language"
+msgstr ""
+
+#: ./../extender.py:63
+msgid "Language of your content"
+msgstr ""
+
+#: ./../vocab.py:7
+msgid "Large Counter"
+msgstr ""
+
+#: ./../browser/controlpanel.py:100
+msgid "No access token configured"
+msgstr ""
+
+#: ./../interfaces.py:15
+#: ./../portlets/flattrportlet.py:38
+msgid "Select the type of flattr button to be shown"
+msgstr ""
+
+#: ./../vocab.py:9
+msgid "Static"
+msgstr ""
+
+#: ./../browser/controlpanel.pt:22
+msgid "Step 1 - Configure consumer key and secret"
+msgstr ""
+
+#: ./../browser/controlpanel.pt:30
+msgid "Step 2 - Acquire an access token"
+msgstr ""
+
+#: ./../browser/controlpanel.pt:50
+msgid "Step 3 - Test access token"
+msgstr ""
+
+#: ./../vocab.py:31
+msgid "System default"
+msgstr ""
+
+#: ./../browser/controlpanel.pt:58
+msgid "Test access token"
+msgstr ""
+
+#: ./../portlets/flattrportlet.py:46
+msgid "Text"
+msgstr ""
+
+#: ./../extender.py:47
+msgid "Thing is not shown in Flattr listings."
+msgstr ""
+
+#: ./../interfaces.py:13
+#: ./../portlets/flattrportlet.py:36
+msgid "Type of flattr button"
+msgstr ""
+
+#: ./../interfaces.py:40
+msgid "URL to flattrs api"
+msgstr ""
+
+#: ./../browser/controlpanel.py:89
+msgid "Unable to create authorize url. consumer and consumer_secret not configured :("
+msgstr ""
+
+#: ./../browser/flattr.py:127
+msgid "Undefined error while getting access token"
+msgstr ""
+
+#: ./../handlers.py:88
+msgid "Updated Flattr thing"
+msgstr ""
+
+#: ./../portlets/flattrportlet.py:42
+msgid "Url for your thing"
+msgstr ""
+
+#: ./../portlets/flattrportlet.py:43
+msgid "Url for your thing, e.g. http://flattr.com/thing/408580/Chris-wirre-Gedankenwelt or just 408580/Chris-wirre-Gedankenwelt"
+msgstr ""
+
+#: ./../interfaces.py:10
+msgid "Url registered at flattr. If you leave this field empty, it will be calculated!"
+msgstr ""
+
+#: ./../handlers.py:46
+msgid "Was not able to create a thing on Flattr"
+msgstr ""
+
+#: ./../handlers.py:92
+msgid "Was not able to update the thing on Flattr"
+msgstr ""
+
+#: ./../portlets/flattrportlet.py:47
+msgid "Write a few words... will be shown above the button"
+msgstr ""
+
+#: ./../interfaces.py:35
+msgid "Your access secret will be set automatically after allowing your web app on flattr"
+msgstr ""
+
+#: ./../interfaces.py:30
+msgid "Your access token will be set automatically after allowing your web app on flattr"
+msgstr ""
+
+#: ./../browser/flattr.py:144
+msgid "access token already configured"
+msgstr ""
+
+#: ./../browser/controlpanel.py:17
+#: ./../profiles/default/controlpanel.xml
+msgid "collective.flattr Settings"
+msgstr ""
+
+#: ./../browser/flattr.py:119
+msgid "collective.flattr successfully configured"
+msgstr ""
+
+#. Default: "collective.flattr Settings"
+#: ./../browser/controlpanel.pt:14
+msgid "heading_settings"
+msgstr ""
+
+#: ./../browser/flattr_popup.pt:34
+msgid "next"
+msgstr ""
+
+#: ./../browser/flattr.py:148
+msgid "no customer_key or customer_secret configured"
+msgstr ""
+
+#: ./../browser/flattr.py:147
+msgid "no_customer"
+msgstr ""
+
+#: ./../browser/flattr_popup.pt:28
+msgid "previous"
+msgstr ""
+
+#: ./../browser/flattr.py:143
+msgid "token_configured"
+msgstr ""
+
+#: ./../browser/flattr.py:126
+msgid "undefined"
+msgstr ""
+

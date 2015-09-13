@@ -1,0 +1,5 @@
+<div id="portlettoggle"
+  i18n:domain="plonetheme.chrigl.viewlets">
+  <a href="#"><img title="flattr" tal:attributes="src string:${context/portal_url}/++resource++plonetheme.chrigl.images/flattr.png" /></a>
+</div>
+<div style="clear: both"></div>

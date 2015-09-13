@@ -1,0 +1,12 @@
+<div tal:condition="view/show"
+  i18n:domain="plonetheme.chrigl.viewlets">
+  <a tal:attributes="href view/first_comment">
+    <span tal:omit-tag="" tal:content="view/num_comments"></span>
+    <tal:comment tal:condition="python:view.num_comments == 1">
+      <span i18n:translate="overview_comment">Comment</span>
+    </tal:comment>
+    <tal:comments tal:condition="python:view.num_comments > 1">
+      <span i18n:translate="overview_comments">Comments</span>
+    </tal:comments>
+  </a>
+</div>
