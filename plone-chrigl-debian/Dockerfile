@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM chrigl/plone-debian:4.3.6
+FROM chrigl/plone-debian:4.3.7
 MAINTAINER Christoph Glaubitz <chris@chrigl.de>
 
 RUN apt-get -y update && apt-get -y install libgeos-dev
