@@ -7,5 +7,9 @@ RUN apk update && \
 RUN apk update && \
   apk add openldap-clients mysql-client postgresql-client && \
   rm -fr /var/cache/apk/*
+RUN apk update && \
+  apk add python3 py-pip && \
+  pip3 install ipython ipdb requests && \
+  rm -fr /var/cache/apk/*
 
 CMD /bin/bash --login
