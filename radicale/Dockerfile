@@ -12,10 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM alpine:latest
+FROM alpine:3.3
 MAINTAINER Christoph Glaubitz <chris@chrigl.de>
 
-RUN apk update && apk add python3 && rm -fr /var/cache/apk/*
+RUN apk update && \
+    apk add python3 && \
+    python3 -m ensurepip && \
+    rm -fr /var/cache/apk/*
 RUN pip3 install radicale
 # Just to be able to use old passwords
 RUN pip3 install passlib # needed for apr1
